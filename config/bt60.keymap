@@ -25,7 +25,9 @@
            &kp LCTRL  &kp LGUI  &kp LALT  &kp SPACE  &kp C_PREVIOUS  &kp C_PAUSE  &kp C_NEXT   &mo 1      &none
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp UP DOWN>;
+            sensor-bindings =
+                <&inc_dec_kp LEFT RIGHT>,
+                <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
         raise {
