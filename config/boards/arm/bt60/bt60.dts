@@ -93,8 +93,8 @@
 	encoder_2: encoder_2 {
 		compatible = "alps,ec11";
 		label = "ENCODER_TWO";
-		a-gpios = <&gpio0 26 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-		b-gpios = <&gpio0 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+		a-gpios = <&gpio0 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+		b-gpios = <&gpio0 26 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
 		resolution = <2>;
 		status = "okay";
 	};
