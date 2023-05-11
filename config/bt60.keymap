@@ -31,7 +31,7 @@
 
         raise {
             bindings = <
-&kp LC(LS(ESCAPE))           &kp F1           &kp F2           &kp F3           &kp F4      &kp F5    &kp F6     &kp F7  &kp F8           &kp F9   &kp F10       &kp F11        &kp F12  &kp LC(LA(DEL))     &kp F14
+&kp LC(LS(ESCAPE))           &kp F1           &kp F2           &kp F3           &kp F4      &kp F5    &kp F6     &kp F7  &kp F8           &kp F9   &kp F10       &kp F11        &kp F12  &kp LC(LA(DEL))  &kp LG(UP)
             &trans        &kp KP_N7  &kp KP_NUMBER_8  &kp KP_NUMBER_9    &kp KP_DIVIDE      &trans    &trans     &trans   &none           &trans     &none         &none         &trans          &kp DEL
    &kp LOCKING_NUM  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_MULTIPLY      &trans    &trans     &trans  &trans  &kp PRINTSCREEN  &kp HOME     &kp PG_UP         &trans
       &kp KP_MINUS            &none  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DOT    &trans     &trans  &trans           &trans   &kp END  &kp UP_ARROW  &kp PAGE_DOWN            &none  &kp C_STOP
@@ -45,15 +45,15 @@
 
         lower {
             bindings = <
- &bl BL_TOG  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4      &trans      &trans  &trans  &trans  &trans  &trans       &trans      &trans  &trans
+ &bl BL_TOG  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4      &trans      &trans  &trans  &trans  &trans  &trans       &trans      &trans  &kp F14
 &kp LG(TAB)        &trans        &trans        &trans        &trans        &trans      &trans      &trans  &trans  &trans  &trans  &trans   &bt BT_CLR  &sys_reset
      &trans        &trans        &trans        &trans        &trans     &kp LG(G)      &trans      &trans  &trans  &trans  &trans  &trans  &bootloader
-     &trans         &none        &trans        &trans        &trans        &trans      &trans      &trans  &trans  &trans  &trans  &trans       &trans       &none  &trans
+     &trans         &none        &trans        &trans        &trans        &trans      &trans      &trans  &trans  &trans  &trans  &trans       &trans       &none   &trans
                &bt BT_PRV         &none    &bt BT_NXT        &trans    &kp C_PREV  &kp C_STOP  &kp C_NEXT   &none   &none
             >;
 
             sensor-bindings =
-                <&inc_dec_kp UP_ARROW DOWN_ARROW>,
+                <&inc_dec_kp DOWN UP>,
                 <&inc_dec_kp RIGHT LEFT>;
         };
     };
